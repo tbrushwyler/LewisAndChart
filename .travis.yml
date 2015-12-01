@@ -19,6 +19,7 @@ script:
 - echo "lewisandchart.com" > _site/CNAME
 - git add -f _site/
 - 'git commit -m "${COMMIT_MESSAGE}"'
+- git stash
 - git filter-branch -f --subdirectory-filter _site/
 - git push -f git@github.com:tbrushwyler/LewisAndChart.git gh-pages:gh-pages
 
