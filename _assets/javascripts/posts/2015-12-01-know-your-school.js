@@ -1,66 +1,97 @@
 var width = 960,
     height = 700,
-    radius = Math.min(width, height) / 2,
-    color = d3.scale.category20c();
+    radius = Math.min(width, height) / 2;
 
-var svg = d3.select("#flares").append("svg")
+var x = d3.scale.linear()
+    .range([0, 2 * Math.PI]);
+
+var y = d3.scale.sqrt()
+    .range([0, radius]);
+
+var catColor = d3.scale.category20c();
+var color = function(d) {
+  if (d.children && d.children.length === 1)
+    return color(d.children[0]);
+
+  return catColor(d.name);
+};
+
+var svg = d3.select("#lakeshore-2015").append("svg")
     .attr("width", width)
     .attr("height", height)
   .append("g")
-    .attr("transform", "translate(" + width / 2 + "," + height * .52 + ")");
+    .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+
+var tooltip = d3.select('#lakeshore-2015').append('div')
+  .attr('class', 'tooltip')
+  .style('opacity', 0);
 
 var partition = d3.layout.partition()
-    .sort(null)
-    .size([2 * Math.PI, radius * radius])
-    .value(function(d) { return 1; });
+    .value(function(d) { return d.actual; })
+    .sort(function(a, b) {
+      return d3.ascending(a.depth, b.depth);
+    });
 
 var arc = d3.svg.arc()
-    .startAngle(function(d) { return d.x; })
-    .endAngle(function(d) { return d.x + d.dx; })
-    .innerRadius(function(d) { return Math.sqrt(d.y); })
-    .outerRadius(function(d) { return Math.sqrt(d.y + d.dy); });
+    .startAngle(function(d) { return Math.max(0, Math.min(2 * Math.PI, x(d.x))); })
+    .endAngle(function(d) { return Math.max(0, Math.min(2 * Math.PI, x(d.x + d.dx))); })
+    .innerRadius(function(d) { return Math.max(0, y(d.y)); })
+    .outerRadius(function(d) { return Math.max(0, y(d.y + d.dy)); });
 
-d3.json("data/flare.json", function(error, root) {
+var format = d3.format('$,');
+
+var value = function(d, propertyName) {
+    if (d.children) {
+        return d3.sum(d.children, function(inner) { return value(inner, propertyName); });
+    }
+
+    return d[propertyName];
+};
+
+d3.json("/data/lakeshore/2015.json", function(error, root) {
   if (error) throw error;
 
-  var path = svg.datum(root).selectAll("path")
-      .data(partition.nodes)
+  var path = svg.selectAll("path")
+      .data(partition.nodes(root))
     .enter().append("path")
-      .attr("display", function(d) { return d.depth ? null : "none"; }) // hide inner ring
       .attr("d", arc)
-      .style("stroke", "#fff")
-      .style("fill", function(d) { return color((d.children ? d : d.parent).name); })
-      .style("fill-rule", "evenodd")
-      .each(stash);
+      .style("fill", function(d) { return color(d); })
+      .attr('name', function(d) { return d.name; })
+      .attr('actual', function(d) { return value(d, 'actual'); })
+      .attr('originalBudget', function(d) { return value(d, 'originalBudget'); })
+      .attr('finalBudget', function(d) { return value(d, 'finalBudget'); })
+      .on("click", click)
+      .on('mouseover', function(d) {
+        tooltip.transition()
+          .duration(200)
+          .style('opacity', 0.9);
+        tooltip.html('<strong>' + d.name + ':</strong> ' + format(value(d, 'actual')))
+          .style('left', (d3.event.pageX) + 'px')
+          .style('top', (d3.event.pageY - 28) + 'px');
+      })
+      .on('mouseout', function(d) {
+        tooltip.transition()
+          .duration(500)
+          .style('opacity', 0);
+      });
 
-  d3.selectAll("input").on("change", function change() {
-    var value = this.value === "count"
-        ? function() { return 1; }
-        : function(d) { return d.size; };
-
-    path
-        .data(partition.value(value).nodes)
-      .transition()
-        .duration(1500)
-        .attrTween("d", arcTween);
-  });
+  function click(d) {
+    path.transition()
+      .duration(750)
+      .attrTween("d", arcTween(d));
+  }
 });
 
-// Stash the old values for transition.
-function stash(d) {
-  d.x0 = d.x;
-  d.dx0 = d.dx;
-}
+d3.select(self.frameElement).style("height", height + "px");
 
-// Interpolate the arcs in data space.
-function arcTween(a) {
-  var i = d3.interpolate({x: a.x0, dx: a.dx0}, a);
-  return function(t) {
-    var b = i(t);
-    a.x0 = b.x;
-    a.dx0 = b.dx;
-    return arc(b);
+// Interpolate the scales!
+function arcTween(d) {
+  var xd = d3.interpolate(x.domain(), [d.x, d.x + d.dx]),
+      yd = d3.interpolate(y.domain(), [d.y, 1]),
+      yr = d3.interpolate(y.range(), [d.y ? 20 : 0, radius]);
+  return function(d, i) {
+    return i
+        ? function(t) { return arc(d); }
+        : function(t) { x.domain(xd(t)); y.domain(yd(t)).range(yr(t)); return arc(d); };
   };
 }
-
-d3.select(self.frameElement).style("height", height + "px");
