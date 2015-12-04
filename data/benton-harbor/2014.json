@@ -1,0 +1,127 @@
+{
+	"name": "Expenditures",
+	"children": [
+		{
+			"name": "Current",
+			"children": [
+				{
+					"name": "Instruction",
+					"children": [
+						{
+							"name": "Basic program",
+							"originalBudget": 8777311,
+							"finalBudget": 10544647,
+							"actual": 11306241
+						},
+						{
+							"name": "Added needs",
+							"originalBudget": 5816237,
+							"finalBudget": 5742014,
+							"actual": 5765403
+						},
+						{
+							"name": "Adult education",
+							"originalBudget": 329844,
+							"finalBudget": 220000,
+							"actual": 226962
+						}
+					]
+				},
+				{
+					"name": "Support services",
+					"children": [
+						{
+							"name": "Pupil",
+							"originalBudget": 950700,
+							"finalBudget": 823346,
+							"actual": 880481
+						},
+						{
+							"name": "Instructional staff",
+							"originalBudget": 2821088,
+							"finalBudget": 2230438,
+							"actual": 2364394
+						},
+						{
+							"name": "General administration",
+							"originalBudget": 636022,
+							"finalBudget": 657026,
+							"actual": 693057
+						},
+						{
+							"name": "School administration",
+							"originalBudget": 1024288,
+							"finalBudget": 832700,
+							"actual": 876365
+						},
+						{
+							"name": "Business",
+							"originalBudget": 2358888,
+							"finalBudget": 2049985,
+							"actual": 1132317
+						},
+						{
+							"name": "Operations and maintenance",
+							"originalBudget": 2671297,
+							"finalBudget": 2987307,
+							"actual": 2810006
+						},
+						{
+							"name": "Pupil transportation services",
+							"originalBudget": 2082939,
+							"finalBudget": 2309919,
+							"actual": 2404058
+						},
+						{
+							"name": "Central",
+							"originalBudget": 571078,
+							"finalBudget": 689291,
+							"actual": 785414
+						},
+						{
+							"name": "Other",
+							"originalBudget": 375119,
+							"finalBudget": 529808,
+							"actual": 510874
+						}
+					]
+				},
+				{
+					"name": "Community services",
+					"originalBudget": 355088,
+					"finalBudget": 657127,
+					"actual": 713574
+				}
+			]
+		},
+		{
+			"name": "Interdistrict",
+			"originalBudget": 2155,
+			"finalBudget": 2155,
+			"actual": 2155
+		},
+		{
+			"name": "Debt service",
+			"children": [
+				{
+					"name": "Principal repayment",
+					"originalBudget": 715000,
+					"finalBudget": 710000,
+					"actual": 710000
+				},
+				{
+					"name": "Interest and fiscal charges",
+					"originalBudget": 3626,
+					"finalBudget": 160000,
+					"actual": 156913
+				}
+			]
+		},
+		{
+			"name": "Capital outlay",
+			"originalBudget": 31192,
+			"finalBudget": 20000,
+			"actual": 0
+		}
+	]
+}
