@@ -141,3 +141,4 @@ d3.select(self.frameElement).style("height", height + "px");
 
 createChart('#lakeshore-2015 .sunburst-chart', '/data/lakeshore/2015.json');
 createChart('#benton-harbor-2014 .sunburst-chart', '/data/benton-harbor/2014.json');
+createChart('#saint-joseph-2015 .sunburst-chart', '/data/saint-joseph/2015.json');

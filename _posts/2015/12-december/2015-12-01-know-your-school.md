@@ -21,6 +21,16 @@ permalink: "/know-your-school"
 	<div class="sunburst-chart"></div>
 </div>
 
+<div id="saint-joseph-2015" class="chart-container">
+	<h3>
+		St. Joseph Public Schools
+		<small>2014</small>
+	</h3>
+	<div class="sunburst-chart"></div>
+</div>
+
+
+
 {% js vendor/d3-3.5.10/d3 %}
 {% js posts/2015-12-01-know-your-school %}
 {% css posts/2015-12-01-know-your-school %}
