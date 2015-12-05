@@ -1,0 +1,104 @@
+{
+	"name": "Expenditures",
+	"children": [
+		{
+			"name": "Current",
+			"children": [
+				{
+					"name": "Instruction",
+					"children": [
+						{
+							"name": "Basic program",
+							"originalBudget": 12627840,
+							"finalBudget": 13538908,
+							"actual": 13932117
+						},
+						{
+							"name": "Added needs",
+							"originalBudget": 1879768,
+							"finalBudget": 1859522,
+							"actual": 1661887
+						}
+					]
+				},
+				{
+					"name": "Support services",
+					"children": [
+						{
+							"name": "Pupil",
+							"originalBudget": 1144050,
+							"finalBudget": 1254123,
+							"actual": 1203633
+						},
+						{
+							"name": "Instructional staff",
+							"originalBudget": 1167360,
+							"finalBudget": 1178538,
+							"actual": 1126202
+						},
+						{
+							"name": "General administration",
+							"originalBudget": 365000,
+							"finalBudget": 378375,
+							"actual": 363784
+						},
+						{
+							"name": "School administration",
+							"originalBudget": 1300225,
+							"finalBudget": 1324180,
+							"actual": 1342302
+						},
+						{
+							"name": "Business",
+							"originalBudget": 515000,
+							"finalBudget": 556154,
+							"actual": 525088
+						},
+						{
+							"name": "Operations and maintenance",
+							"originalBudget": 2771900,
+							"finalBudget": 2804316,
+							"actual": 2902236
+						},
+						{
+							"name": "Pupil transportation services",
+							"originalBudget": 796000,
+							"finalBudget": 878616,
+							"actual": 911120
+						},
+						{
+							"name": "Technology",
+							"originalBudget": 868150,
+							"finalBudget": 669181,
+							"actual": 660086
+						}
+					]
+				},
+				{
+					"name": "Athletics/Extra Duty",
+					"originalBudget": 785080,
+					"finalBudget": 810585,
+					"actual": 766980
+				},
+				{
+					"name": "Community services",
+					"originalBudget": 83500,
+					"finalBudget": 81417,
+					"actual": 79652
+				}
+			]
+		},
+		{
+			"name": "Capital outlay",
+			"originalBudget": 20000,
+			"finalBudget": 19935,
+			"actual": 28835
+		},
+		{
+			"name": "Intergovernmental payments",
+			"originalBudget": 29065,
+			"finalBudget": 28707,
+			"actual": 39371
+		}
+	]
+}
