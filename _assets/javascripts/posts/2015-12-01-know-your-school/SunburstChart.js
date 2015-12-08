@@ -55,9 +55,10 @@ SunburstChart.prototype.createDomElements = function() {
 		.append('g')
 		.attr('transform', 'translate(' + this.width / 2 + ', ' + this.height / 2 + ')');
 
-	this.tooltip = d3.select(this.selector).append('div')
-		.attr('class', 'tooltip')
-		.style('opacity', 0);
+	// todo: the tooltip is all fucked up
+	// this.tooltip = d3.select(this.selector).append('div')
+	// 	.attr('class', 'sunburst-tooltip')
+	// 	.style('opacity', 0);
 };
 
 SunburstChart.prototype.createChart = function() {
@@ -99,19 +100,21 @@ SunburstChart.prototype.selectElement = function(el, maxValue) {
 
 // chart event handlers
 SunburstChart.prototype.onMouseover = function(el) {
-	this.tooltip.transition()
-        .duration(200)
-        .style('opacity', 0.9);
+	// todo: the tooltip is all fucked up
+	// we need to figure out a better way of displaying the values in the chart
+	// this.tooltip.transition()
+ //        .duration(200)
+ //        .style('opacity', 0.9);
 
-    this.tooltip.html('<strong>' + el.name + ':</strong> ' + this.format(this.getValue(el)))
-        .style('left', (d3.event.pageX) + 'px')
-        .style('top', (d3.event.pageY - 28) + 'px');
+ //    this.tooltip.html('<strong>' + el.name + ':</strong> ' + this.format(this.getValue(el)))
+ //        .style('left', (d3.event.pageX) + 'px')
+ //        .style('top', (d3.event.pageY - 28) + 'px');
 };
 
 SunburstChart.prototype.onMouseout = function(el) {
-	this.tooltip.transition()
-        .duration(500)
-        .style('opacity', 0);
+	// this.tooltip.transition()
+ //        .duration(500)
+ //        .style('opacity', 0);
 };
 
 SunburstChart.prototype.click = function(el) {
