@@ -52,5 +52,7 @@ permalink: "/know-your-school"
 
 
 {% js vendor/d3-3.5.10/d3 %}
+{% js posts/2015-12-01-know-your-school/SunburstChart %}
+{% js posts/2015-12-01-know-your-school/SunburstChartGroup %}
 {% js posts/2015-12-01-know-your-school %}
 {% css posts/2015-12-01-know-your-school %}
