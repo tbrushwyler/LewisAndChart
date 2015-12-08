@@ -76,12 +76,7 @@ permalink: "/know-your-school"
 		<nav class="hidden-print hidden-sm hidden-xs">
 			<ul class="nav">
 				<li><a href="#introduction">Introduction</a></li>
-				<li>
-					<a href="#expenses">Expenses</a>
-					<ul class="nav">
-						<li><a href="#expenses-2015">2015</a></li>
-					</ul>
-				</li>
+				<li><a href="#expenses">Expenses</a></li>
 				<li><a href="#revenues">Revenues</a></li>
 			</ul>
 		</nav>

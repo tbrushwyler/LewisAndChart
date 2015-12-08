@@ -16,10 +16,10 @@ end
 
 task :test do
 	HTML::Proofer.new("./_site", {
-		:href_ignore => [
+		href_ignore: [
 			"#"
 		],
-		:disable_external => true
+		disable_external: true
 	}).run
 end
 
