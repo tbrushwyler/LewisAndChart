@@ -51,7 +51,16 @@ SunburstChartGroup.prototype.initialize = function(charts) {
 };
 
 SunburstChartGroup.prototype.elementSelected = function(el) {
-	for (var i = 0; i < this.charts.length; i++) {
-		this.charts[i].selectElementByName(el.name);
-	}
+	var elements = this.charts.map(function(chart) {
+		return chart.getElementByName(el.name);
+	});
+
+	var group = this;
+	var maxValue = d3.max(elements, function(element) {
+		return group.getValue(element);
+	});
+
+	this.charts.forEach(function(chart) {
+		chart.selectElement(chart.getElementByName(el.name), maxValue);
+	}, this);
 };

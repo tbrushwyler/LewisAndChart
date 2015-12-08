@@ -26,10 +26,16 @@ function SunburstChart(container, config) {
         .innerRadius(function(d) { return Math.max(0, chart.y(d.y)); }) // todo: make these radii depend on data
         .outerRadius(function(d) { return Math.max(0, chart.y(d.y + d.dy)); });
 
-    this.arcTween = function(el) {
+    this.arcTween = function(el, maxValue) {
+    	var radius = chart.maxRadius;
+    	if (maxValue) {
+    		var val = this.getValue(el);
+    		radius = radius * Math.sqrt(val) / Math.sqrt(maxValue);
+    	}
+
     	var xd = d3.interpolate(chart.x.domain(), [el.x, el.x + el.dx]),
             yd = d3.interpolate(chart.y.domain(), [el.y, 1]),
-            yr = d3.interpolate(chart.y.range(), [el.y ? 20 : 0, chart.maxRadius]); // todo: make this radius depend on data
+            yr = d3.interpolate(chart.y.range(), [el.y ? 20 : 0, radius]);
 
         return function(d, i) {
             return i
@@ -71,7 +77,7 @@ SunburstChart.prototype.createChart = function() {
     });
 };
 
-SunburstChart.prototype.selectElementByName = function(name) {
+SunburstChart.prototype.getElementByName = function(name) {
 	var elements = this.svg.selectAll("path")
 		.filter(function(el) {
 			return el.name === name;
@@ -80,13 +86,15 @@ SunburstChart.prototype.selectElementByName = function(name) {
 	if (!elements)
 		return;
 
-	this.selectElement(elements.datum());
+	return elements.datum();
 };
 
-SunburstChart.prototype.selectElement = function(el) {
+SunburstChart.prototype.selectElement = function(el, maxValue) {
+	maxValue = maxValue || this.getValue(el);
+
 	this.path.transition()
         .duration(750)
-        .attrTween("d", this.arcTween(el));
+        .attrTween("d", this.arcTween(el, maxValue));
 };
 
 // chart event handlers
