@@ -12,7 +12,7 @@ permalink: "/know-your-school"
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ligula ex, accumsan sed arcu nec, malesuada tristique orci. In pellentesque nisi eget nisl vulputate, at facilisis enim luctus. Sed consequat odio eleifend elit posuere sodales. Proin sollicitudin leo et dictum dapibus. Integer aliquet nisi sed dolor pretium, sed fringilla mauris vestibulum. Donec non elit nibh. Vestibulum tincidunt odio turpis, id iaculis odio porttitor vulputate. Donec cursus lacus in consequat mollis. Sed massa dui, tincidunt vel pretium at, blandit a nisl. Nullam velit neque, sodales sit amet sodales et, porta quis turpis. Suspendisse in lacus mauris. Nunc facilisis a mauris at lacinia. Mauris sem dolor, rutrum vel varius mattis, consectetur sagittis velit.</p>
 			<p>Cras malesuada diam id sapien iaculis bibendum. Sed dapibus pharetra urna at viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Maecenas convallis urna id purus pretium tempor. Duis aliquam pellentesque tincidunt. Mauris pretium diam sit amet odio mollis porttitor. Sed ex ante, rhoncus a consectetur et, consectetur vel erat. Integer massa libero, aliquet sed leo a, vulputate interdum metus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis sed suscipit eros, sed aliquet augue.</p>
 		</section>
-		
+
 		<hr />
 
 		<section id="expenses">
@@ -52,6 +52,7 @@ permalink: "/know-your-school"
 						Lakeshore Public Schools
 						<small>2015</small>
 					</h3>
+					<h4>$30,559,383</h4>
 					<div class="doughnut-chart"></div>
 				</div>
 				<div id="benton-harbor-2015-Revenue" class="chart-container col-xs-12 col-sm-6 col-md-4 text-center">
@@ -59,6 +60,7 @@ permalink: "/know-your-school"
 						Benton Harbor Area Schools
 						<small>2014</small>
 					</h3>
+					<h4>$34,323,951</h4>
 					<div class="doughnut-chart"></div>
 				</div>
 				<div id="saint-joseph-2015-Revenue" class="chart-container col-xs-12 col-sm-6 col-md-4 text-center">
@@ -66,6 +68,7 @@ permalink: "/know-your-school"
 						St. Joseph Public Schools
 						<small>2015</small>
 					</h3>
+					<h4>$31,456,234</h4>
 					<div class="doughnut-chart"></div>
 				</div>
 			</div>
