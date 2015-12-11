@@ -1,3 +1,10 @@
+$brand-primary: #55A3EB;
+
+$font-family-serif: ButlerStencil, Georgia, "Times New Roman", Times, serif !default;
+$font-family-bold-serif: ButlerStencilBold, Georgia, "Times New Roman", Times, serif !default;
+
 $font-size-base: 16px;
+$headings-font-family: $font-family-bold-serif;
+$headings-color: #616161;
 
 @import "bootstrap/variables"

@@ -48,7 +48,7 @@ var createRevChart = function(selector, url) {
 
 d3.select(self.frameElement).style("height", 300 + "px");
 
-var expenditureGroup = new SunburstChartGroup();
+var expenditureGroup = new SunburstChartGroup({ chartWidth: 250 });
 expenditureGroup.initialize([
     {
         selector: '#lakeshore-2015 .sunburst-chart',

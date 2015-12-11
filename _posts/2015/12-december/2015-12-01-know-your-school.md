@@ -73,7 +73,7 @@ permalink: "/know-your-school"
 	</div>
 
 	<div class="col-sm-3">
-		<nav class="hidden-print hidden-sm hidden-xs">
+		<nav class="hidden-print hidden-sm hidden-xs scrollspy" data-spy="affix" data-offset-top="120" data-offset-bottom="300">
 			<ul class="nav">
 				<li><a href="#introduction">Introduction</a></li>
 				<li><a href="#expenses">Expenses</a></li>

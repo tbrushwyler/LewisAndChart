@@ -1,3 +1,17 @@
 .navbar {
 	border-radius: 0;
 }
+
+body {
+	position: relative;
+}
+
+.nav>.active>a:hover,
+.nav>.active>a:focus,
+.nav>.active>a {
+	border-left: 2px solid $brand-primary;
+}
+
+.nav>:not(.active)>a {
+	border-left: 2px solid transparent;
+}

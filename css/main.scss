@@ -21,7 +21,10 @@
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
+		"fonts",
 		"variables",
         "bootstrap",
-        "overrides"
+        "overrides",
+        "header",
+        "post"
 ;
