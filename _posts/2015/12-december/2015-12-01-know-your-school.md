@@ -3,6 +3,7 @@ layout: post
 title: "Know Your School"
 date: 2015-12-01 12:03:00
 permalink: "/know-your-school"
+linkImage: links/2015-12-01-know-your-school
 ---
 <div class="row">
 	<div class="col-sm-9">
