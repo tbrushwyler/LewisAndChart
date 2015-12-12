@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lewis &amp; Chart</title>
+    <description>Visual exploration of data. Request a data visualization.
+</description>
+    <link>http://lewisandchart.com/</link>
+    <atom:link href="http://lewisandchart.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 12 Dec 2015 19:15:11 +0000</pubDate>
+    <lastBuildDate>Sat, 12 Dec 2015 19:15:11 +0000</lastBuildDate>
+    <generator>Jekyll v3.0.1</generator>
+    
+      <item>
+        <title>Know Your School</title>
+        <description>&lt;div class=&quot;row&quot;&gt;
+	&lt;div class=&quot;col-sm-9&quot;&gt;
+		&lt;section id=&quot;introduction&quot;&gt;
+			&lt;h2 class=&quot;text-center&quot;&gt;Introduction&lt;/h2&gt;
+			&lt;!-- todo --&gt;
+			&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ligula ex, accumsan sed arcu nec, malesuada tristique orci. In pellentesque nisi eget nisl vulputate, at facilisis enim luctus. Sed consequat odio eleifend elit posuere sodales. Proin sollicitudin leo et dictum dapibus. Integer aliquet nisi sed dolor pretium, sed fringilla mauris vestibulum. Donec non elit nibh. Vestibulum tincidunt odio turpis, id iaculis odio porttitor vulputate. Donec cursus lacus in consequat mollis. Sed massa dui, tincidunt vel pretium at, blandit a nisl. Nullam velit neque, sodales sit amet sodales et, porta quis turpis. Suspendisse in lacus mauris. Nunc facilisis a mauris at lacinia. Mauris sem dolor, rutrum vel varius mattis, consectetur sagittis velit.&lt;/p&gt;
+			&lt;p&gt;Cras malesuada diam id sapien iaculis bibendum. Sed dapibus pharetra urna at viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Maecenas convallis urna id purus pretium tempor. Duis aliquam pellentesque tincidunt. Mauris pretium diam sit amet odio mollis porttitor. Sed ex ante, rhoncus a consectetur et, consectetur vel erat. Integer massa libero, aliquet sed leo a, vulputate interdum metus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis sed suscipit eros, sed aliquet augue.&lt;/p&gt;
+		&lt;/section&gt;
+
+		&lt;hr /&gt;
+
+		&lt;section id=&quot;expenses&quot;&gt;
+			&lt;h2 class=&quot;text-center&quot;&gt;Expenses&lt;/h2&gt;
+			&lt;div class=&quot;row&quot;&gt;
+				&lt;div id=&quot;lakeshore-2015&quot; class=&quot;chart-container col-xs-12 col-sm-6 col-md-4 text-center&quot;&gt;
+					&lt;h3&gt;
+						Lakeshore Public Schools
+						&lt;small&gt;2015&lt;/small&gt;
+					&lt;/h3&gt;
+					&lt;div class=&quot;sunburst-chart&quot;&gt;&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div id=&quot;benton-harbor-2014&quot; class=&quot;chart-container col-xs-12 col-sm-6 col-md-4 text-center&quot;&gt;
+					&lt;h3&gt;
+						Benton Harbor Area Schools
+						&lt;small&gt;2014&lt;/small&gt;
+					&lt;/h3&gt;
+					&lt;div class=&quot;sunburst-chart&quot;&gt;&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div id=&quot;saint-joseph-2015&quot; class=&quot;chart-container col-xs-12 col-sm-6 col-md-4 text-center&quot;&gt;
+					&lt;h3&gt;
+						St. Joseph Public Schools
+						&lt;small&gt;2015&lt;/small&gt;
+					&lt;/h3&gt;
+					&lt;div class=&quot;sunburst-chart&quot;&gt;&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/section&gt;
+
+		&lt;hr /&gt;
+
+		&lt;section id=&quot;revenues&quot;&gt;
+			&lt;h2 class=&quot;text-center&quot;&gt;Revenues&lt;/h2&gt;
+			&lt;div class=&quot;row&quot;&gt;
+				&lt;div id=&quot;lakeshore-2015-Revenue&quot; class=&quot;chart-container col-xs-12 col-sm-6 col-md-4 text-center&quot;&gt;
+					&lt;h3&gt;
+						Lakeshore Public Schools
+						&lt;small&gt;2015&lt;/small&gt;
+					&lt;/h3&gt;
+					&lt;h4&gt;$30,559,383&lt;/h4&gt;
+					&lt;div class=&quot;doughnut-chart&quot;&gt;&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div id=&quot;benton-harbor-2015-Revenue&quot; class=&quot;chart-container col-xs-12 col-sm-6 col-md-4 text-center&quot;&gt;
+					&lt;h3&gt;
+						Benton Harbor Area Schools
+						&lt;small&gt;2015&lt;/small&gt;
+					&lt;/h3&gt;
+					&lt;h4&gt;$34,323,951&lt;/h4&gt;
+					&lt;div class=&quot;doughnut-chart&quot;&gt;&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div id=&quot;saint-joseph-2015-Revenue&quot; class=&quot;chart-container col-xs-12 col-sm-6 col-md-4 text-center&quot;&gt;
+					&lt;h3&gt;
+						St. Joseph Public Schools
+						&lt;small&gt;2015&lt;/small&gt;
+					&lt;/h3&gt;
+					&lt;h4&gt;$31,456,234&lt;/h4&gt;
+					&lt;div class=&quot;doughnut-chart&quot;&gt;&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/section&gt;
+	&lt;/div&gt;
+
+	&lt;div class=&quot;col-sm-3&quot;&gt;
+		&lt;nav class=&quot;hidden-print hidden-sm hidden-xs scrollspy&quot; data-spy=&quot;affix&quot; data-offset-top=&quot;120&quot; data-offset-bottom=&quot;300&quot;&gt;
+			&lt;ul class=&quot;nav&quot;&gt;
+				&lt;li&gt;&lt;a href=&quot;#introduction&quot;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href=&quot;#expenses&quot;&gt;Expenses&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href=&quot;#revenues&quot;&gt;Revenues&lt;/a&gt;&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/nav&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script type=&quot;text/javascript&quot; src=&quot;/assets/vendor/d3-3.5.10/d3.js&quot;&gt;&lt;/script&gt;
+
+&lt;script type=&quot;text/javascript&quot; src=&quot;/assets/posts/2015-12-01-know-your-school/SunburstChart.js&quot;&gt;&lt;/script&gt;
+
+&lt;script type=&quot;text/javascript&quot; src=&quot;/assets/posts/2015-12-01-know-your-school/SunburstChartGroup.js&quot;&gt;&lt;/script&gt;
+
+&lt;script type=&quot;text/javascript&quot; src=&quot;/assets/posts/2015-12-01-know-your-school.js&quot;&gt;&lt;/script&gt;
+
+&lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;/assets/posts/2015-12-01-know-your-school.css&quot; /&gt;
+
+</description>
+        <pubDate>Tue, 01 Dec 2015 12:03:00 +0000</pubDate>
+        <link>http://lewisandchart.com/know-your-school</link>
+        <guid isPermaLink="true">http://lewisandchart.com/know-your-school</guid>
+        
+        
+      </item>
+    
+  </channel>
+</rss>

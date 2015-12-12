@@ -1,0 +1,104 @@
+{
+	"name": "Expenses",
+	"children": [
+		{
+			"name": "Current",
+			"children": [
+				{
+					"name": "Instruction",
+					"children": [
+						{
+							"name": "Basic program",
+							"originalBudget": 13348958,
+							"finalBudget": 13473585,
+							"actual": 13325041
+						},
+						{
+							"name": "Added needs",
+							"originalBudget": 3244901,
+							"finalBudget": 3151985,
+							"actual": 3054713
+						}
+					]
+				},
+				{
+					"name": "Support services",
+					"children": [
+						{
+							"name": "Pupil",
+							"originalBudget": 1307421,
+							"finalBudget": 1268593,
+							"actual": 1233605
+						},
+						{
+							"name": "Instructional staff",
+							"originalBudget": 969828,
+							"finalBudget": 973138,
+							"actual": 870209
+						},
+						{
+							"name": "General administration",
+							"originalBudget": 519234,
+							"finalBudget": 533734,
+							"actual": 488384
+						},
+						{
+							"name": "School administration",
+							"originalBudget": 1420708,
+							"finalBudget": 1452601,
+							"actual": 1422400
+						},
+						{
+							"name": "Business",
+							"originalBudget": 456452,
+							"finalBudget": 451452,
+							"actual": 400137
+						},
+						{
+							"name": "Operations and maintenance",
+							"originalBudget": 2154944,
+							"finalBudget": 2179944,
+							"actual": 1982199
+						},
+						{
+							"name": "Pupil transportation services",
+							"originalBudget": 880391,
+							"finalBudget": 883221,
+							"actual": 855896
+						},
+						{
+							"name": "Central",
+							"originalBudget": 343489,
+							"finalBudget": 329797,
+							"actual": 264650
+						}
+					]
+				},
+				{
+					"name": "Athletics/Extra Duty",
+					"originalBudget": 656096,
+					"finalBudget": 656096,
+					"actual": 679675
+				},
+				{
+					"name": "Community services",
+					"originalBudget": 88284,
+					"finalBudget": 88284,
+					"actual": 54611
+				}
+			]
+		},
+		{
+			"name": "Debt service",
+			"originalBudget": 55000,
+			"finalBudget": 60000,
+			"actual": 53538
+		},
+		{
+			"name": "Capital outlay",
+			"originalBudget": 125000,
+			"finalBudget": 329826,
+			"actual": 329539
+		}
+	]
+}
