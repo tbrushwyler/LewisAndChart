@@ -78,9 +78,10 @@ linkImage: links/2015-12-01-know-your-school
 		<section id="revTimeSeries">
 			<h2 class="text-center">Revenue Time Series</h2>
 			<div class="row">
-				<div id="benton-harbor-2015-RevTimeSeries" class="chart-container col-xs-12 col-sm-6 col-md-4 text-center">
+				<div id="benton-harbor-2015-RevTimeSeries" class="chart-container col-md-1 text-center" style="width: 50%;
+    margin: 0 auto;">
 					<h3>
-						Benton Harbor
+						Revenue 2011-2015
 						<small>2015</small>
 					</h3>
 					<div class="revTimeSeries-chart"></div>
