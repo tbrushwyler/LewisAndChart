@@ -74,6 +74,19 @@ linkImage: links/2015-12-01-know-your-school
 				</div>
 			</div>
 		</section>
+
+		<section id="revTimeSeries">
+			<h2 class="text-center">Revenue Time Series</h2>
+			<div class="row">
+				<div id="benton-harbor-2015-RevTimeSeries" class="chart-container col-xs-12 col-sm-6 col-md-4 text-center">
+					<h3>
+						Benton Harbor
+						<small>2015</small>
+					</h3>
+					<div class="revTimeSeries-chart"></div>
+				</div>
+			</div>
+		</section>
 	</div>
 
 	<div class="col-sm-3">
