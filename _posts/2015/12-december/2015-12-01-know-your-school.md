@@ -59,7 +59,7 @@ linkImage: links/2015-12-01-know-your-school
 				<div id="benton-harbor-2015-Revenue" class="chart-container col-xs-12 col-sm-6 col-md-4 text-center">
 					<h3>
 						Benton Harbor Area Schools
-						<small>2014</small>
+						<small>2015</small>
 					</h3>
 					<h4>$34,323,951</h4>
 					<div class="doughnut-chart"></div>
